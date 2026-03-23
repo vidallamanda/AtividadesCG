@@ -15,7 +15,6 @@ Repositório de exemplos de códigos em C++ utilizando OpenGL moderna (3.3+) cri
 │   ├── glad.c                # Implementação da GLAD
 ├── 📂 src/                   # Código-fonte dos exemplos e exercícios
 │   ├── Hello3D.cpp           # Exemplo básico de renderização com OpenGL
-│   ├── ...                   # Outros exemplos e exercícios futuros
 ├── 📂 build/                 # Diretório gerado pelo CMake (não incluído no repositório)
 ├── 📂 assets/                # diretório com modelos 3D, texturas, fontes etc
 ├── 📄 CMakeLists.txt         # Configuração do CMake para compilar os projetos

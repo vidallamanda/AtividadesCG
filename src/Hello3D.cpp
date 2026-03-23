@@ -1,9 +1,9 @@
 /* Hello Triangle - código adaptado de https://learnopengl.com/#!Getting-started/Hello-Triangle
  *
- * Adaptado por Rossana Baptista Queiroz
+ * Adaptado por Rossana Baptista Queiroz e Amanda Vidal
  * para as disciplinas de Processamento Gráfico/Computação Gráfica - Unisinos
  * Versão inicial: 7/4/2017
- * Última atualização em 07/03/2025
+ * Última atualização em 22/03/2026
  */
 
 #include <iostream>
@@ -78,7 +78,7 @@ int main()
 //#endif
 
 	// Criação da janela GLFW
-	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "Ola 3D -- Rossana!", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "Ola 3D -- Amanda Vidal!", nullptr, nullptr);
 	glfwMakeContextCurrent(window);
 
 	// Fazendo o registro da função de callback para a janela GLFW
