@@ -170,16 +170,14 @@ Agora que seu ambiente está configurado, você pode:
 ```
 📁 src/
 │── Hello3D.cpp
-│── Transformacoes.cpp
-│── Iluminacao.cpp
+│── Cube3D.cpp
 ```
 
 ✅ Para cada exercício novo, atualizar o arquivo `CMakelists.txt`
 ```cmake
 set(EXERCISES 
     Hello3D
-    Transformacoes
-    Iluminacao
+    Cube3D
 )
 ```
 ✅ Atualmente, o `CMakelists.txt` já está configurado para compilar e gerar o excutável de cada código acrescentado no set EXERCISES. Se necessário, adicionar novas dependências
