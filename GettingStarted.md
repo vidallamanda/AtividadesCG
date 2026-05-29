@@ -172,6 +172,7 @@ Agora que seu ambiente está configurado, você pode:
 │── Hello3D.cpp
 │── Cube3D.cpp
 │── Textura.cpp
+│── Iluminacao.cpp
 ```
 
 ✅ Para cada exercício novo, atualizar o arquivo `CMakelists.txt`
@@ -180,6 +181,7 @@ set(EXERCISES
     Hello3D
     Cube3D
     Textura
+    Iluminacao
 )
 ```
 ✅ Atualmente, o `CMakelists.txt` já está configurado para compilar e gerar o excutável de cada código acrescentado no set EXERCISES. Se necessário, adicionar novas dependências

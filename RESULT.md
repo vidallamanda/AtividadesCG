@@ -23,3 +23,11 @@ Terceiro exercício de gráficos 3D.
 
 ### Resultado
 ![alt text](image-3.png)
+
+## Iluminação
+
+### Descrição
+Quarto exercício de gráficos 3D.
+
+### Resultado
+![alt text](image-4.png)
