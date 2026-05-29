@@ -173,13 +173,14 @@ Agora que seu ambiente está configurado, você pode:
 │── Cube3D.cpp
 │── Textura.cpp
 │── Iluminacao.cpp
+│── AtividadeVivencial2.cpp
 ```
 
 ✅ Para cada exercício novo, atualizar o arquivo `CMakelists.txt`
 ```cmake
 set(EXERCISES 
     Hello3D
-    Cube3D
+    AtividadeVivencial2.cpp
     Textura
     Iluminacao
 )

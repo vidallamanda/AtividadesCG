@@ -48,6 +48,8 @@ set(EXERCISES
     Cube3D
     Textura
     Iluminacao
+    AtividadeVivencial1
+    AtividadeVivencial2
 )
 
 add_compile_options(-Wno-pragmas)

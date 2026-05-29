@@ -24,10 +24,18 @@ Terceiro exercício de gráficos 3D.
 ### Resultado
 ![alt text](image-3.png)
 
-## Iluminação
+## Iluminacao
 
 ### Descrição
 Quarto exercício de gráficos 3D.
 
 ### Resultado
 ![alt text](image-4.png)
+
+## AtividadeVivencial2
+
+### Descrição
+Atividade Vivencial 2 de gráficos 3D.
+
+### Resultado
+![alt text](image-5.png)
