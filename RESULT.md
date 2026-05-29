@@ -15,3 +15,11 @@ Segundo exercício de gráficos 3D.
 
 ### Resultado
 ![alt text](image-2.png)
+
+## Textura
+
+### Descrição
+Terceiro exercício de gráficos 3D.
+
+### Resultado
+![alt text](image-3.png)

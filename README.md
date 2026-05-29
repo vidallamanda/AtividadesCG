@@ -16,6 +16,7 @@ Repositório de exemplos de códigos em C++ utilizando OpenGL moderna (3.3+) cri
 ├── 📂 src/                   # Código-fonte dos exemplos e exercícios
 │   ├── Hello3D.cpp           # Exemplo básico de renderização com OpenGL
 │   ├── Cube3D.cpp            # Cubo
+│   ├── Textura.cpp           # Texturas
 ├── 📂 build/                 # Diretório gerado pelo CMake (não incluído no repositório)
 ├── 📂 assets/                # diretório com modelos 3D, texturas, fontes etc
 ├── 📄 CMakeLists.txt         # Configuração do CMake para compilar os projetos
