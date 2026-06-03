@@ -19,6 +19,7 @@ Repositório de exemplos de códigos em C++ utilizando OpenGL moderna (3.3+) cri
 │   ├── Textura.cpp                # Texturas
 │   ├── Iluminacao.cpp             # Iluminação de phong
 │   ├── AtividadeVivencial2.cpp    # Iluminação de 3 pontos
+│   ├── Camera.cpp                 # Câmera em primeira pessoa
 ├── 📂 build/                 # Diretório gerado pelo CMake (não incluído no repositório)
 ├── 📂 assets/                # diretório com modelos 3D, texturas, fontes etc
 ├── 📄 CMakeLists.txt         # Configuração do CMake para compilar os projetos

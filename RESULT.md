@@ -39,3 +39,11 @@ Atividade Vivencial 2 de gráficos 3D.
 
 ### Resultado
 ![alt text](image-5.png)
+
+## Câmera
+
+### Descrição
+Quinto exercício de gráficos 3D. 
+
+### Resultado
+![alt text](image-6.png)

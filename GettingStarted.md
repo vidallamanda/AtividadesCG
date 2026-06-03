@@ -174,15 +174,18 @@ Agora que seu ambiente está configurado, você pode:
 │── Textura.cpp
 │── Iluminacao.cpp
 │── AtividadeVivencial2.cpp
+│── Camera.cpp
 ```
 
 ✅ Para cada exercício novo, atualizar o arquivo `CMakelists.txt`
 ```cmake
 set(EXERCISES 
     Hello3D
-    AtividadeVivencial2.cpp
+    Cube3D
     Textura
     Iluminacao
+    AtividadeVivencial2.cpp
+    Camera.cpp
 )
 ```
 ✅ Atualmente, o `CMakelists.txt` já está configurado para compilar e gerar o excutável de cada código acrescentado no set EXERCISES. Se necessário, adicionar novas dependências
