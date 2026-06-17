@@ -9,7 +9,7 @@ Este tutorial foi desenvolvido para Windows utilizando MSYS2 UCRT64 como ambient
 Para configurar corretamente o compilador no VS Code no Linux ou no MacOS, siga os guias oficiais:
 
 🔗 [Linux: Configuração do VS Code para C++ no Linux](https://code.visualstudio.com/docs/cpp/config-linux)  
-🔗 [macOS: Configuração do VS Code para C++ no macOS](https://code.visualstudio.com/docs/cpp/config-clang-mac)  
+🔗 [macOS: Configuração do VS Code para C++ no macOS](https://code.visualstudio.com/docs/cpp/config-clang-mac)
 
 Caso tenha dificuldades na configuração do CMake, consulte a documentação oficial:  
 🔗 [CMake Documentation](https://cmake.org/documentation/)
@@ -30,7 +30,6 @@ Durante a instalação, **habilite a opção "Add CMake to system PATH"** para f
 ---
 
 ### 2️⃣ Instalar o Compilador MinGW-UCRT64 através do <img src="https://github.com/user-attachments/assets/a473c44b-1fe1-4399-911a-d921225f53a6" alt="MSYS2 Logo" width="32" style="vertical-align: middle;" />
-
 
 Baixe o **MSYS2** através do link:
 🔗 [MSYS2 Download](https://www.msys2.org/)
@@ -53,16 +52,18 @@ Caso queira ou necessite de mais suporte nesta etapa, consulte o manual oficial:
 
 Esse passo garante que o sistema operacional encontre o compilador automaticamente ao rodar comandos no terminal, sem precisar especificar o caminho completo. A forma mais simples de fazer isso (se você tiver permissão de administrador do sistema) é a seguinte:
 
- - Edite a variável de caminhos do sistema operacional (`PATH`), acrescentando o caminho onde ficaram os executáveis do compilador (provavelmente ficaram em `C:\msys64\ucrt64\bin` - ou onde você escolheu instalar)
+- Edite a variável de caminhos do sistema operacional (`PATH`), acrescentando o caminho onde ficaram os executáveis do compilador (provavelmente ficaram em `C:\msys64\ucrt64\bin` - ou onde você escolheu instalar)
 
 <img src="https://github.com/user-attachments/assets/645846a5-38e2-4a26-a307-a961afb80116" alt="" style="width:30%; height:auto;" align="middle"/>
 <img src="https://github.com/user-attachments/assets/89bc66d1-c269-45ac-9f5f-e528325a9e95" alt="" style="width:30%; height:auto;" align="middle"/>
 <img src="https://github.com/user-attachments/assets/25c305fa-239c-4119-afd3-20d8dbf318e6" alt="" style="width:30%; height:auto;" align="middle"/>
 
- - Se estiver em um computador que não tenha acesso de adm, adicionar temporariamente ao path com este comando (via terminal CMD): 
+- Se estiver em um computador que não tenha acesso de adm, adicionar temporariamente ao path com este comando (via terminal CMD):
+
 ```sh
    set PATH=%PATH%;C:\msys64\ucrt64\bin
 ```
+
 ---
 
 ### 3️⃣ Instalar o VS Code <img src="https://github.com/user-attachments/assets/0b0e314b-8910-4311-b862-8f4c2e012d33" alt="Visual Studio Code Logo" width="32" style="vertical-align: middle;" />
@@ -74,7 +75,7 @@ Após a instalação, abra o **VS Code** e instale as seguintes extensões:
 
 - **CMake Tools** ➝ Para integração com o CMake.
 - **C/C++** ➝ Para suporte à IntelliSense e depuração.
-  
+
 Para isso, você pode ir no menu View -> Extensions ou clicar no ícone <img src="https://github.com/user-attachments/assets/ce6873db-1dbb-4a74-887f-4ea90f90dfc4" alt="" width="32" style="vertical-align: middle;" /> da interface do Visual Studio Code.
 
 ---
@@ -84,11 +85,11 @@ Para isso, você pode ir no menu View -> Extensions ou clicar no ícone <img src
 O **CMake FetchContent** baixa automaticamente dependências, como a **GLFW**, e para isso ele precisa do **Git** instalado no sistema.
 
 - **Baixe e instale o Git** pelo site oficial:  
-🔗 [Download Git](https://git-scm.com/downloads)  
+  🔗 [Download Git](https://git-scm.com/downloads)
 
 Durante a instalação, **habilite a opção "Add Git to PATH"**, para que ele possa ser acessado pelo CMake.
 
-- **Verifique se o Git está instalado corretamente** executando no terminal (CMD ou PowerShell):  
+- **Verifique se o Git está instalado corretamente** executando no terminal (CMD ou PowerShell):
 
 ```sh
 git --version
@@ -107,7 +108,9 @@ Agora vamos baixar o código de exemplo:
 ```sh
 git clone https://github.com/guilhermechagaskurtz/CGCCHIB.git
 ```
+
 Se você nunca usou o git, pode fazê-lo utilizando o 🔗 [Github Desktop](https://desktop.github.com/download/). Para isso, consulte o seguinte material:
+
 - [Tutorial de Entregas pelo Github](TutorialEntregasGithub.pdf)
 
 2️⃣ Abra o VS Code e vá em `Arquivo -> Abrir Diretório` (ou `File -> Open Folder`). Selecione o diretório onde você clonou o repositório de exemplo.
@@ -124,16 +127,18 @@ Se você nunca usou o git, pode fazê-lo utilizando o 🔗 [Github Desktop](http
 
 <img src="https://github.com/user-attachments/assets/93417f3a-6fc3-448c-bb73-1cc3a33ab199" alt="" style="width:40%; height:auto;" align="middle"/>
 
-2️⃣ Logo após, pressione novamente `Ctrl + Shift + P` e procure por `CMake: Select a Kit`.  
+2️⃣ Logo após, pressione novamente `Ctrl + Shift + P` e procure por `CMake: Select a Kit`.
 
 3️⃣ **Selecione o compilador correto**:
-   - Escolha `GCC for MSYS2 UCRT64` (ou similar, conforme sua instalação)
-     
-     <img src="https://github.com/user-attachments/assets/618655d3-253a-4d99-a6c0-e241c45a5c0c" alt="" style="width:40%; height:auto;" align="middle"/>
+
+- Escolha `GCC for MSYS2 UCRT64` (ou similar, conforme sua instalação)
+
+  <img src="https://github.com/user-attachments/assets/618655d3-253a-4d99-a6c0-e241c45a5c0c" alt="" style="width:40%; height:auto;" align="middle"/>
 
 4️⃣ Este passo costuma acontecer automaticamente. Mas caso não ocorra nada após selecionar o kit, pressione `Ctrl + Shift + P` e execute `CMake: Configure`
-   - Isso fará o **CMake detectar o compilador correto e preparar o projeto**. Espera-se que, após esta etapa, tenha-se uma saída similar a esta no terminal do VS Studio Code:
-  
+
+- Isso fará o **CMake detectar o compilador correto e preparar o projeto**. Espera-se que, após esta etapa, tenha-se uma saída similar a esta no terminal do VS Studio Code:
+
    <img src="https://github.com/user-attachments/assets/ca3bc7f1-5115-48d2-9f39-6a236e18f9b3" alt="" style="width:50%; height:auto;" align="middle"/>
 
 ## 📌 4. Compilando e Executando o Projeto
@@ -142,17 +147,19 @@ Da mesma forma que o **CMake: Configure** pode executar automaticamente, a compi
 Caso não ocorra ou você pretenda compilar novamente:
 
 1️⃣ Pressione `Ctrl + Shift + P` e execute `CMake: Build`
-   - Ou rode manualmente no terminal:
 
-   ```sh
-   cd build
-   cmake --build .
-   ```
+- Ou rode manualmente no terminal:
+
+```sh
+cd build
+cmake --build .
+```
 
 2️⃣ **Execute o programa**:
-   ```sh
-   ./Hello3D.exe
-   ```
+
+```sh
+./Hello3D.exe
+```
 
 Se tudo estiver correto, o projeto será compilado e executado com sucesso! 🚀
 
@@ -163,10 +170,12 @@ Se tudo estiver correto, o projeto será compilado e executado com sucesso! 🚀
 Agora que seu ambiente está configurado, você pode:
 
 ✅ Copiar o conteúdo do repositório clonado para o **seu repositório**. Caso precise de ajuda para criar e organizar seu próprio repositório de exercícios, consulte os seguintes materiais:
+
 - [Tutorial de Entregas pelo Github](TutorialEntregasGithub.pdf)
 - [Organizando seu repositório no Github](OrganizandoRepositorioGithub.pdf)
 
 ✅ Adicionar os exercícios dentro da pasta `src/`
+
 ```
 📁 src/
 │── Hello3D.cpp
@@ -175,11 +184,13 @@ Agora que seu ambiente está configurado, você pode:
 │── Iluminacao.cpp
 │── AtividadeVivencial2.cpp
 │── Camera.cpp
+│── Trajetorias.cpp
 ```
 
 ✅ Para cada exercício novo, atualizar o arquivo `CMakelists.txt`
+
 ```cmake
-set(EXERCISES 
+set(EXERCISES
     Hello3D
     Cube3D
     Textura
@@ -188,13 +199,16 @@ set(EXERCISES
     Camera.cpp
 )
 ```
+
 ✅ Atualmente, o `CMakelists.txt` já está configurado para compilar e gerar o excutável de cada código acrescentado no set EXERCISES. Se necessário, adicionar novas dependências
+
 ```cmake
 foreach(EXERCISE ${EXERCISES})
     add_executable(${EXERCISE} src/${EXERCISE}.cpp Common/glad.c)
     target_link_libraries(${EXERCISE} glfw opengl32)
 endforeach()
 ```
+
 ✅ Isso faz com que cada exercício gere seu próprio executável dentro da pasta build/.
 
 ✅ Portanto, se adicionar mais arquivos .cpp, basta incluir o nome na lista EXERCISES e rodar o CMake novamente.
