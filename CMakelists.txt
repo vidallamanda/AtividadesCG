@@ -52,6 +52,7 @@ set(EXERCISES
     AtividadeVivencial2
     Camera
     Trajetorias
+    IntegracaoGB
 )
 
 add_compile_options(-Wno-pragmas)

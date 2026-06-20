@@ -69,3 +69,13 @@ Sexto exercício de gráficos 3D.
 ### Resultado
 
 ![alt text](image-7.png)
+
+## Integração GB
+
+### Descrição
+
+Integração GB de gráficos 3D.
+
+### Resultado
+
+![alt text](image-8.png)

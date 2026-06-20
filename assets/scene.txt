@@ -1,0 +1,15 @@
+# Arquivo de configuracao de cena — Integracao GB
+# Computacao Grafica — Unisinos — Amanda Vidal
+#
+# CAMERA: pos_x pos_y pos_z  yaw  pitch  fov  near  far
+CAMERA 0.0 1.5 7.0  -90.0 -5.0  45.0 0.1 100.0
+#
+# LIGHT: pos_x pos_y pos_z  cor_r cor_g cor_b  intensidade
+LIGHT  3.0  4.0  3.0   1.0 1.0 1.0  1.2
+LIGHT -3.0  2.0  2.0   0.6 0.6 0.9  0.7
+#
+# OBJECT: arquivo  pos_x pos_y pos_z  rot_x rot_y rot_z  escala  [BEZIER x y z ...]
+# Suzanne — parada, selecionavel
+OBJECT Suzanne.obj  -2.5 0.0 0.0  0.0 30.0 0.0  1.0
+# Cubo — com trajetoria Bezier cubica (4 pontos de controle)
+OBJECT Cube.obj      2.5 0.0 0.0  0.0 45.0 0.0  0.8  BEZIER  2.5 0.0 0.0   4.5 1.5 -2.0   4.5 -1.5 2.0   2.5 0.0 0.0
